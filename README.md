@@ -1,24 +1,85 @@
 # README
+A Malaysian coffee rating Rails 6 Regular API App.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Coffees#index
+![alt text](https://i.imgur.com/exFUTD7.png)
 
-Things you may want to cover:
+# Coffees#show
+![alt text](https://i.imgur.com/uMRYYYk.png)
 
-* Ruby version
+# Coffees#create
+![alt text](https://i.imgur.com/XMSEgum.png)
 
-* System dependencies
+# Coffees#update
+![alt text](https://i.imgur.com/IdfTZBH.png)
 
-* Configuration
+# Coffees#delete
+![alt text](https://i.imgur.com/bm8hlvt.png)
 
-* Database creation
+# Reviews#create
+![alt text](https://i.imgur.com/5HPxqd2.png)
 
-* Database initialization
+# Reviews#delete
+![alt text](https://i.imgur.com/mKVD8FH.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby version: 3.0.3
 
-* Deployment instructions
+* Rails version: 6.1.4.1
 
-* ...
+* Node version: 16.3.1
+
+* Development Database: PostgreSQL
+
+
+# Instructions to run in your Local Machine:
+*(1) Clone the Repo.
+
+*(2) Install all the dependencies. Run
+```
+bundle install
+```
+*(3) Create and Migrate Database. Run
+```
+rails db:create
+rails db:migrate
+```
+*(4) Spin up your local development server. Run
+```
+rails s
+```
+*(5) To list all the available routes. Run
+```
+rails routes
+```
+*(6) From your API testing tool, you can follow these endpoints:
+
+
+```
+To List All The Coffee:
+GET -> http://localhost:3000/api/v1/coffees.json
+```
+```
+To Show Specific Coffee. For Example:
+GET -> http://localhost:3000/api/v1/coffees/starbucks-caffe-verona-ground-coffee
+```
+```
+To Create a New Coffee With Headers:
+POST -> http://localhost:3000/api/v1/coffees
+```
+```
+To Update an Existing Coffee With Headers:
+PATCH -> http://localhost:3000/api/v1/coffees/nescafe-classic-arabica-robusta-blend
+```
+```
+To Delete a Coffee By Slug:
+DELETE -> http://localhost:3000/api/v1/coffees/new-insomnia-coffee
+```
+```
+To Create a Review:
+POST -> http://localhost:3000/api/v1/reviews
+```
+```
+To Delete an Existing Review by ID:
+DELETE -> http://localhost:3000/api/v1/reviews/7
+```
